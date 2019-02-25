@@ -1,0 +1,2 @@
+class SurfCompany < ApplicationRecord
+end
