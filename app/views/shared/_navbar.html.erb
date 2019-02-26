@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<!-- <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <a class="navbar-brand" href="#">
     <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
 </a>
@@ -24,4 +24,31 @@
       </li>
     </ul>
   </div>
-</div>
+</div> -->
+
+
+ <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        <img src="img/mlogo.png" width="50" height="50" alt="">
+        <h3 class="d-inline align-middle">Cowabunga</h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+<!--             <a href="#home" class="nav-link">LOCATIONS</a> -->
+          <%= link_to 'LOCATIONS', surf_companies_path, class: 'navbar-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'ABOUT', surf_companies_path, class: 'navbar-link' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'CONTACT', surf_companies_path, class: 'navbar-link' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
