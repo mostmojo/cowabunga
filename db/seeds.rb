@@ -12,16 +12,36 @@ SurfCompany.destroy_all
 puts 'Creating Surf Companies...'
 surf_companies_attributes = [
   {
-    name:         'Flo Riders',
-    address:      '7 Boundary St, Miami E2 7JE'
+    name:         'Surfari Surf Shop & Surf Lessons',
+    address:      ' 52 Bovard Ave # W, Ormond Beach, FL 32176, USA'
   },
   {
-    name:         'The Mighty Bungas',
-    address:      '56A Flo High St, Miami E1 6PQ',
+    name:         'EZride Surf School',
+    address:      '892 NW 47th St, Pompano Beach, FL 33064, USA',
   },
   {
-    name:         'The Surf Shack',
-    address:      '56A Rida Low St, Miami E1 6ZQ',
+    name:         'Nex Generation Surf School',
+    address:      '47 S Atlantic Ave, Cocoa Beach, FL 32931, USA',
+  },
+  {
+    name:         'Jax Surf & Paddle',
+    address:      '241 Atlantic Blvd #102, Neptune Beach, FL 32266, USA',
+  },
+  {
+    name:         'School of Surf',
+    address:      '200 N Atlantic Ave, Cocoa Beach, FL 32931, USA',
+  },
+  {
+    name:         'Big Kahuna Surf School',
+    address:      '1985 NE 2nd St, Deerfield Beach, FL 33441, USA',
+  },
+  {
+    name:         'Surfguys Surf School',
+    address:      'P. O. Box 510633, Melbourne Beach, FL 32951, United States',
+  },
+  {
+    name:         'SURF Miami Beach',
+    address:      '79th St, Miami Beach, FL 33141, United States',
   }
 ]
 SurfCompany.create!(surf_companies_attributes)
