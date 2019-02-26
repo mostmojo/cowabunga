@@ -1,0 +1,6 @@
+<h1>Add a Booking</h1>
+<%= simple_form_for [@surf_company, @booking] do |f| %>
+  <%= f.input :date %>
+  <%= f.input :time %>
+  <%= f.button :submit, class: "btn-danger" %>
+<% end %>
