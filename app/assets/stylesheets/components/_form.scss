@@ -1,0 +1,22 @@
+.positioning {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-primary {
+-webkit-appearance: none;
+ color: #FFF;
+ background-color: #0292b6;
+ text-transform: uppercase;
+ padding: 15px 25px;
+ display: inline-block;
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-weight: 700;
+ line-height: 1em;
+ letter-spacing: 0.10em;
+ margin-top: 12px;
+}
+
