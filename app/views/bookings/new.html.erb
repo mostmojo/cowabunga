@@ -1,11 +1,13 @@
 <div class="container">
 	<div class="positioning">
-		<div>
+		<div class="form-style">
 			<h1>Add a Booking</h1>
 			<%= simple_form_for [@surf_company, @booking] do |f| %>
 			  <%= f.input :date %>
 			  <%= f.input :time %>
-			  <%= f.button :submit, class: "btn-primary" %>
+			  <div class="button">
+			  	<%= f.button :submit, class: "btn-primary" %>
+			  </div>
 			<% end %>
 		</div>
 	</div>
