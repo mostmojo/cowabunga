@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: [:show, :update, :edit, :destroy]
+  before_action :set_booking, only: [:show, :update, :edit]
   def index
     @surf_companies = SurfCompany.all
     @bookings = Booking.all
@@ -36,9 +36,10 @@ class BookingsController < ApplicationController
   end
 
   def update
+    @booking = Booking.find(params[:id])
     respond_to do |format|
       if @booking.update(booking_params)
-        format.html { redirect_to booking_path, notice: 'Your booking was successfully updated'}
+        format.html { redirect_to bookings_path, notice: 'Your booking was successfully updated'}
       else
         format.html { render :edit }
         format.json { render json: @booking.errors, status: unprocessable_entity }
@@ -53,6 +54,6 @@ class BookingsController < ApplicationController
   end
 
   def set_booking
-    @booking = Booking.find(params[:surf_company_id])
+    @booking = Booking.find(params[:id])
   end
 end
