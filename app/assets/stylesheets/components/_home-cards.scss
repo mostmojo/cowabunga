@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-around;
 
+
 }
 
 .card-element {
   border-width: 4px;
   border-style: solid;
+  border-radius: 2px;
   padding: 16px;
   margin:20px;
   border-color: yellow;
@@ -37,4 +39,8 @@
 .card-name {
   text-align: center;
   padding-top: 12px;
+}
+
+.card-container {
+  background-color: #f4f4f4;
 }
