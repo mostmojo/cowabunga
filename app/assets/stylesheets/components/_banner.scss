@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  justify-content: space-around;
+  widows: 100vh;
+}
+
+.main-image {
+  height: 60vh;
+  width: 100%;
+  background-size: cover!important;
+}
+
+.secondary-images {
+  height: 60vh;
+  width: 50vw;
+}
+
+.small-image {
+  position: 50vh;
+  height: 30vh;
+  background-size: cover!important;
+}
+
