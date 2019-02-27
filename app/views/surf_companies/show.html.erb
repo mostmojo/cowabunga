@@ -17,7 +17,9 @@
     <p><%= @surf_company.address %></p>
   </div>
 
-  <div class= "booking-container">
-    <a blue-button ><%= link_to "Book now", new_surf_company_booking_path(@surf_company) %></a>
+  <div class= "booking-container ">
+    <%= link_to new_surf_company_booking_path(@surf_company) do %>
+      <button class="btn text-white">Book now</button>
+    <% end %>
   </div>
 </div>
