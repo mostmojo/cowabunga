@@ -1,0 +1,40 @@
+.home-cards {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card-element {
+  border-width: 4px;
+  border-style: solid;
+  padding: 16px;
+  margin:20px;
+  border-color: yellow;
+  border-image: linear-gradient(45deg, #f09433 25%, #e6683c 50%, #dc2743 75%, #cc2366 100%);
+  border-image-slice: 1;
+  height: 350px;
+  border-width: 4px;
+  // border-color: linear-gradient(45deg, #f09433 25%, #e6683c 50%, #dc2743 75%, #cc2366 100%);
+}
+
+.img-card {
+  text-align: center;
+  font-size: 44px;
+}
+
+.card-content {
+      margin-top: 80px;
+}
+
+.card-title {
+  margin-top: 40px;
+}
+
+.img-card i {
+  color: #0292b6;
+}
+
+.card-name {
+  text-align: center;
+  padding-top: 12px;
+}

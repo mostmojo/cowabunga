@@ -27,28 +27,61 @@
 </div> -->
 
 
- <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+<!--  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img src="img/mlogo.png" width="50" height="50" alt="">
-        <h3 class="d-inline align-middle">Cowabunga</h3>
+        <h3 class="d-inline align-middle"><#%= image_tag "cowabunga-logo.png", alt: "Cowabunga logo", width: 200 %></h3>
       </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-<!--             <a href="#home" class="nav-link">LOCATIONS</a> -->
-          <%= link_to 'LOCATIONS', surf_companies_path, class: 'navbar-link' %>
+          <#%= link_to 'LOCATIONS', surf_companies_path, class: 'navbar-link' %>
           </li>
           <li class="nav-item">
-            <%= link_to 'ABOUT', surf_companies_path, class: 'navbar-link' %>
+            <#%= link_to 'ABOUT', surf_companies_path, class: 'navbar-link' %>
           </li>
           <li class="nav-item">
-            <%= link_to 'CONTACT', surf_companies_path, class: 'navbar-link' %>
+            <#%= link_to 'CONTACT', surf_companies_path, class: 'navbar-link' %>
+          </li>
+          <li class="nav-item sign-in">
+            <#%= link_to 'SIGN IN', surf_companies_path, class: 'navbar-link' %>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
+<!-- <ul class="navbar">
+  <li class="nav-item"><a href="#home">LOCATIONS</a></li>
+  <li class="nav-item"><a href="#news">ABOUT</a></li>
+  <li class="nav-item"><a href="#contact">CONTACT</a></li>
+  <li class="nav-item"><a href="#contact">SIGN IN</a></li>
+  <li style="float:left"><a class="active" href="#home">Logo</a></li>
+</ul>
+ -->
+
+<div class="nav-container">
+  <div class="nav-logo">
+          <h3 class="d-inline align-middle"><%= image_tag "cowabunga-logo.png", alt: "Cowabunga logo", width: 200 %></h3>
+  </div>
+  <div class="link-flex">
+    <div class="link">
+      <%= link_to 'LOCATIONS', surf_companies_path, class: 'navbar-link' %>
+    </div>
+    <div class="link">
+      <%= link_to 'ABOUT', surf_companies_path, class: 'navbar-link' %>
+    </div>
+    <div class="link">
+      <%= link_to 'CONTACT', surf_companies_path, class: 'navbar-link' %>
+    </div>
+    <div class="link-2">
+      <% if user_signed_in? %>
+        <%= link_to 'Sign Out', destroy_user_session_path, class: 'navbar-link' %>
+      <% else %>
+        <%= link_to 'Sign In', surf_companies_path, class: 'navbar-link' %>
+      <% end %>
+    </div>
+  </div>
+</div>
