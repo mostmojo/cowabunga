@@ -1,5 +1,5 @@
-<div class="container-home">\
-<section class="hero" id="hero">
+<div class="container-home">
+<section>
     <div class="video-wrap">
         <video autoplay="autoplay" muted="muted" loop="loop" poster="media/img/vid-placeholder.jpg" class="bg-video">
 
@@ -7,13 +7,9 @@
         </video>
     </div>
     <div class="container-text">
-<!--         <div class="row hero-content text-center"> -->
-<!--             <div class="col-sm-12 col-md-12 col-lg-8 col-lg-offset-2">
-              <h1 class="display-2 mt-5 pt-5"> -->
                 <div class="title">
               <h1>GET ON THE WATER TODAY</h1>
               </div>
-<!--             </h1> -->
             <p class="lead">We offer lessons for all ages with top quality equiqment, an impeccable safety record, along with a service-oriented & safety-certified staff.</p>
             <%= link_to surf_companies_path do %>
               <button class="btn text-white">
@@ -23,12 +19,28 @@
             <% end %>
 <!--             </div> -->
 <!--         </div> -->
+
     </div>
 </section>
 </div>
 
+<h2 class="card-name">We offering for you</h2>
+<div class="home-cards">
+  <div class="card-element">
+    <div class="img-card"><i class="fas fa-hands-helping"></i></div>
+    <h2 class="card-title">Lorem ipsum dolor sit.</h2>
+    <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam, tempora debitis odit! Omnis, cupiditate.</p>
+  </div>
+  <div class="card-element">
+  <div class="img-card"><i class="fas fa-hands-helping"></i></div>
+    <h2 class="card-title">Lorem ipsum dolor sit.</h2>
+    <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam, tempora debitis odit! Omnis, cupiditate.</p>
+  </div>
+  <div class="card-element">
+  <div class="img-card"><i class="fas fa-hands-helping"></i></div>
+    <h2 class="card-title">Lorem ipsum dolor sit.</h2>
+    <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam, tempora debitis odit! Omnis, cupiditate.</p>
+  </div>
+  </div>
+</div>
 
-
-
-
-<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
