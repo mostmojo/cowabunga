@@ -8,16 +8,22 @@
     </div>
     <div class="container-text">
                 <div class="title">
-              <h1>GET ON THE WATER TODAY</h1>
+              <h1>Find a Surf School in Florida</h1>
               </div>
             <p class="lead">We offer lessons for all ages with top quality equiqment, an impeccable safety record, along with a service-oriented & safety-certified staff.</p>
-            <a href="#" class="btn text-white">
-              SELECT LOCATION
-            </a>
+            <%= link_to surf_companies_path do %>
+              <button class="btn text-white">
+                
+                SELECT LOCATION
+              </button>
+            <% end %>
+<!--             </div> -->
+<!--         </div> -->
+
     </div>
 </section>
 </div>
-
+<div class="card-container">
 <h2 class="card-name">We offering for you</h2>
 <div class="home-cards">
   <div class="card-element">
@@ -36,5 +42,6 @@
     <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam, tempora debitis odit! Omnis, cupiditate.</p>
   </div>
   </div>
+</div>
 </div>
 

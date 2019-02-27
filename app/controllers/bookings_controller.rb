@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
     # Associate the user to the booking. Devise provides this current_user
     @booking.user = current_user
     if @booking.save
-      redirect_to surf_companies_path(@surf_company)
+      redirect_to bookings_path
     else
       render :new
     end
@@ -31,7 +31,7 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
     @booking.destroy
     respond_to do |format|
-      format.html { redirect_to surf_company_url, notice: 'Your booking was successfully deleted'}
+      format.html { redirect_to surf_companies_path, notice: 'Your booking was successfully deleted'}
     end
   end
 
