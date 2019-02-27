@@ -129,10 +129,10 @@ min-height: 180px;
   padding: 6px;
 
     &:hover {
-      border: 1px solid white;
-      border-radius: 30px;
-      opacity: 0.9;
-      transition: 0.4s;
+      border-bottom: 1px solid white;
+      // border-radius: 30px;
+      // opacity: 0.6;
+      // transition: 0.4s;
 
     }
 }
