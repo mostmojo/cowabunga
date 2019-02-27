@@ -13,7 +13,7 @@ const bounds = new mapboxgl.LngLatBounds();
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mostmojo/cjsnagko008k71fqlcsn5oux3'
+      style: 'mapbox://styles/mostmojo/cjsnaew0l0uy21fmf73cjqpww'
     });
     const markers = JSON.parse(mapElement.dataset.markers);
   		markers.forEach((marker) => {
