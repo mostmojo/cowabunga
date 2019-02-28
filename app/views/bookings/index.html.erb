@@ -1,7 +1,12 @@
 <br>
 <br>
   <div class="container">
-    <h1>Manage my bookings</h1>
+    <div class="header">
+      <h1>Manage my bookings</h1>
+      <%= link_to surf_companies_path do %>
+        <button class="btn text-white">Create new booking</button>
+      <% end %>
+    </div>
     <div class="bookings-container">
       <% @bookings.each do |booking| %>
         <%= link_to booking_path(booking), class:'card-link' do %>
