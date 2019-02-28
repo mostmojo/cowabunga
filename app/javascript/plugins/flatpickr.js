@@ -1,6 +1,6 @@
 import flatpickr from "flatpickr"
 import $ from 'jquery'
-import "flatpickr/dist/themes/dark.css"
+import "flatpickr/dist/themes/material_orange.css"
 import minMaxTimePlugin from 'flatpickr/dist/plugins/minMaxTimePlugin'
 $('.dater').flatpickr({
   enableTime: true,
