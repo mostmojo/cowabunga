@@ -1,4 +1,3 @@
-<div class="show-container">
   <div class="banner">
     <div class="main-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
     </div>
@@ -9,50 +8,26 @@
       </div>
     </div>
   </div>
-</div>
 
+  <div class="show-company-container">
+    <div class="company-details-container">
+      <h2><%= @surf_company.name %></h2>
+      <p><i class="fas fa-map-marker-alt"></i><%= @surf_company.address %></p>
+      <p>The magic of Miami Beach is yours when you plan your BouYah Water Sports activities at the Miami Beach Marina. Located adjacent to Government Cut, with no fixed bridges and plenty of deep water your ocean adventure awaits!</p>
+      <p>Facilities</p>
+      <p>Available between 10:00-16:00</p>
+      <p><i class="fas fa-mobile-alt"></i>Contact us: +357 99543811</p>
+    </div>
 
-  <div class="details-container">
-    <div class="title-company-icon">
-      <h2><i class="fas fa-map-marker-alt"></i><%= @surf_company.name %></h2>
+    <div class="booking-form-container">
+      <div class="form-style">
+        <h2>Add a Booking</h2>
+        <%= simple_form_for [@surf_company, Booking.new] do |f| %>
+          <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
+            <%= f.button :submit, class: "btn-login" %>
+        <% end %>
       </div>
     </div>
-</div>
-
-
-    <div class="container-info">
-      <div class="item">
-        <i class="fas fa-map-marker-alt"></i>
-        <div class="item-content-show">
-          <h3>Address</h3>
-          <p><%= @surf_company.address %></p>
-        </div>
-      </div>
-      <div class="item">
-        <i class="fas fa-mobile-alt"></i>
-        <div class="item-content-show">
-          <h3>Phone</h3>
-          <p>Elias: +357 99543811 Angie: +35799 666708</p>
-        </div>
-      </div>
-    </div>
-      <div class="item-2">
-        <h3><i class="fas fa-book-reader"></i>Description</h3>
-        <p class="text-margin">The magic of Miami Beach is yours when you plan your BouYah Water Sports activities at the Miami Beach Marina. Located adjacent to Government Cut, with no fixed bridges and plenty of deep water your ocean adventure awaits!</p>
-      </div>
-</div>
-
-<div class="container">
-  <div class="positioning">
-    <div class="form-style">
-      <h1>Add a Booking</h1>
-      <%= simple_form_for [@surf_company, Booking.new] do |f| %>
-        <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
-          <%= f.button :submit, class: "btn-primary" %>
-        </div>
-      <% end %>
-  <!--  </div -->
   </div>
-</div>
 
-</div>
+
