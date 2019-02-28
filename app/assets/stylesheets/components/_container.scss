@@ -5,17 +5,72 @@
 .details-container {
   background-color: white;
   padding: 15px;
-  margin: 15px;
   border-radius: 10px;
 }
 
 .show-container {
-	height: 100vh;
+	height: 60vh;
 }
 
 .bookings-container {
 	height: 100vh;
 }
+
+.container-info {
+  display:flex;
+  justify-content: space-around;
+  background-color: white;
+  margin-top: 80px;
+}
+
+.title-company-icon {
+  display:flex;
+  justify-content: left;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+i.fas {
+  font-size: 34px;
+  color: #ED787A;
+  margin-right: 16px;
+
+}
+
+.item {
+  background-color: white;
+  display: flex;
+  padding: 8px;
+}
+
+.item-2 {
+  background-color: white;
+  margin-top: 80px;
+  padding: 26px;
+}
+
+.button-show {
+  -webkit-appearance: none;
+    color: #FFF;
+    padding: 15px 14px;
+    background-color: #ED787A;
+    display: inline-block;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1em;
+    margin-left: 12px;
+    letter-spacing: 0.10em;
+    &:hover {
+    opacity: 0.8;
+  }
+}
+
+.text-margin {
+  margin-top: 24px;
+
 
 .form {
  margin: auto;
