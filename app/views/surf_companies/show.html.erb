@@ -1,25 +1,46 @@
 <div class="show-container">
-<div class="banner">
-  <div class="main-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
-  </div>
-  <div class="secondary-images">
-    <div class="small-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
+  <div class="banner">
+    <div class="main-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
     </div>
-    <div class="small-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
+    <div class="secondary-images">
+      <div class="small-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
+      </div>
+      <div class="small-image" style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
+      </div>
     </div>
   </div>
 </div>
 
-<div class= "container">
+
   <div class="details-container">
-    <h1><%= @surf_company.name %></h1>
-    <p><%= @surf_company.address %></p>
-  </div>
-
-  <div class= "booking-container ">
-    <%= link_to new_surf_company_booking_path(@surf_company) do %>
-      <button class="btn text-white">Book now</button>
-    <% end %>
-  </div>
+    <div class="title-company-icon">
+      <h2><i class="fas fa-map-marker-alt"></i><%= @surf_company.name %></h2>
+        <%= link_to new_surf_company_booking_path(@surf_company) do %>
+          <button class="button-show">Book now</button>
+        <% end %>
+      </div>
+    </div>
 </div>
+
+
+    <div class="container-info">
+      <div class="item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="item-content-show">
+          <h3>Address</h3>
+          <p><%= @surf_company.address %></p>
+        </div>
+      </div>
+      <div class="item">
+        <i class="fas fa-mobile-alt"></i>
+        <div class="item-content-show">
+          <h3>Phone</h3>
+          <p>Elias: +357 99543811 Angie: +35799 666708</p>
+        </div>
+      </div>
+    </div>
+      <div class="item-2">
+        <h3><i class="fas fa-book-reader"></i>Description</h3>
+        <p class="text-margin">The magic of Miami Beach is yours when you plan your BouYah Water Sports activities at the Miami Beach Marina. Located adjacent to Government Cut, with no fixed bridges and plenty of deep water your ocean adventure awaits!</p>
+      </div>
 </div>

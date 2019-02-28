@@ -3,12 +3,10 @@
 		<div class="form-style">
 			<h1>Add a Booking</h1>
 			<%= simple_form_for [@surf_company, @booking] do |f| %>
-			  <%= f.input :date %>
-			  <%= f.input :time %>
-			  <div class="button">
+			  <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
 			  	<%= f.button :submit, class: "btn-primary" %>
 			  </div>
 			<% end %>
-		</div>
+	<!-- 	</div -->>
 	</div>
 </div>
