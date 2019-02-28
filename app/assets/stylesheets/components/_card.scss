@@ -12,7 +12,7 @@
 
 .card-products {
   display: grid;
-  grid-template-columns: 1fr,1fr;
+  display: flex;
 }
 
 .card-product img {
@@ -39,4 +39,3 @@
 .card-product .card-product-infos {
   padding: 16px;
 }
-
