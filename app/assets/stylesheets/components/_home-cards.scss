@@ -9,14 +9,13 @@
   border-width: 4px;
   border-style: solid;
   border-radius: 2px;
-  padding: 16px;
+  padding: 6px;
   margin:20px;
   border-color: yellow;
   border-image: linear-gradient(45deg, #f09433 25%, #e6683c 50%, #dc2743 75%, #cc2366 100%);
   border-image-slice: 1;
-  height: 350px;
+  height: 300px;
   border-width: 4px;
-  // border-color: linear-gradient(45deg, #f09433 25%, #e6683c 50%, #dc2743 75%, #cc2366 100%);
 }
 
 .img-card {
@@ -25,11 +24,14 @@
 }
 
 .card-content {
-      margin-top: 80px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .card-title {
-  margin-top: 40px;
+  margin-top: 20px;
+  text-align:center;
 }
 
 .img-card i {
