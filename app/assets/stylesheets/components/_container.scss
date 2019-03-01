@@ -1,14 +1,13 @@
 
 .show-company-container {
   display: flex;
-  margin: 5px;
+  margin: 50px;
   justify-content: space-between;
 }
 
 .company-details-container {
   background-color: white;
   border-radius: 10px;
-  padding: 50px;
   width: 50%;
 
 }
@@ -30,7 +29,6 @@ i.fas {
 }
 
 .positioning {
-  padding: 50px;
   width: 40%;
   content-align: center;
 }
@@ -44,10 +42,11 @@ i.fas {
   height: 50px;
 }
 
-// .btn-login {
-//   height: 20px;
-//   width: 40px;
-// }
+
+.form-style {
+  border: 1px solid #ced4da;
+  padding: 15px;
+  border-radius: 5px;
 
 .bookings-container {
   margin-left: -13px;
