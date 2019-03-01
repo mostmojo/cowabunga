@@ -26,7 +26,9 @@
         <h2>Select a date and time:</h2>
         <%= simple_form_for [@surf_company, Booking.new] do |f| %>
         <%= f.input :date, as: :string, label: false, required: false, input_html: {class: "dater"} %>
-          <%= f.button :submit, class: "btn text-white" %>
+        <div class="button-center">
+          <%= f.button :submit, class:"btn text-white"%>
+          </div>
         <% end %>
       </div>
     </div>

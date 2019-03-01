@@ -5,7 +5,9 @@
 			<h2>Edit your booking:</h2>
       <%= simple_form_for(@booking) do |f| %>
         <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
-          <%= f.button :submit, class: "text-white button-right" %>
+        <div class="button-center">
+          <%= f.button :submit, class: "text-white" %>
+          </div>
         </div>
       <% end %>
 		</div>
