@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2019_03_01_105006) do
     t.float "latitude"
     t.float "longitude"
     t.text "description"
-    t.string "facilities"
+    t.text "facilities"
     t.string "number"
     t.string "email"
   end
