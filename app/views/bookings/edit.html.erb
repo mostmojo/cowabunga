@@ -1,12 +1,14 @@
-<div class="container-edit-form">
-	<div class="positioning-form-edit">
-		<div>
-			<h2>Edit a Booking</h2>
+<div style="display: flex;justify-content: center;align-items: center;flex-direction:row;height:calc(100vh - 300px);">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4 form">
+			<h2>Edit your booking:</h2>
       <%= simple_form_for(@booking) do |f| %>
         <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
-          <%= f.button :submit, class: "text-white" %>
+          <%= f.button :submit, class: "text-white button-right" %>
         </div>
       <% end %>
 		</div>
 	</div>
+</div>
 

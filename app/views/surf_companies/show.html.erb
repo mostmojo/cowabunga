@@ -23,10 +23,10 @@
 
     <div class="positioning">
       <div class="form-style">
-        <h2>Add a Booking</h2>
+        <h2>Select a date and time:</h2>
         <%= simple_form_for [@surf_company, Booking.new] do |f| %>
-        <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
-          <%= f.button :submit, class: "btn-login" %>
+        <%= f.input :date, as: :string, label: false, required: false, input_html: {class: "dater"} %>
+          <%= f.button :submit, class: "btn text-white" %>
         <% end %>
       </div>
     </div>
