@@ -1,12 +1,12 @@
-<div class="container">
-	<div class="positioning">
+<div class="container-edit-form">
+	<div class="positioning-form-edit">
 		<div>
-			<h1>Edit a Booking</h1>
-			<%= simple_form_for(@booking) do |f| %>
-			  <%= f.input :date %>
-			  <%= f.input :time %>
-			  <%= f.button :submit, class: "btn text-white" %>
-			<% end %>
+			<h2>Edit a Booking</h2>
+      <%= simple_form_for(@booking) do |f| %>
+        <%= f.input :date, as: :string, label: "Start date", required: false, input_html: {class: "dater"} %>
+          <%= f.button :submit, class: "text-white" %>
+        </div>
+      <% end %>
 		</div>
 	</div>
-</div>
+
