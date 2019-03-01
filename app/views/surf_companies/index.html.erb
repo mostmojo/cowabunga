@@ -7,7 +7,7 @@
         <% @surf_companies.each do |surf_company|  %>
           <%= link_to surf_company_path(surf_company), class:'card-link' do %>
             <div class="card-product">
-              <img style="background-image: url('https://source.unsplash.com/featured/?{surf},{surfer}<%= (1..10000).to_a.sample %>');">
+              <img style="background-image: url(surf_company.image);">
               <div class="card-product-infos">
                 <h2><%= surf_company.name %> </h2>
                 <p><%= surf_company.address %></p>

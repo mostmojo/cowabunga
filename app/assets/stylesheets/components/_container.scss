@@ -1,38 +1,16 @@
 
-.container-show {
-  display: flex;
-}
 .show-company-container {
   display: flex;
-  margin: 60px;
+  margin: 5px;
   justify-content: space-between;
 }
 
 .company-details-container {
   background-color: white;
   border-radius: 10px;
+  padding: 50px;
+  width: 50%;
 
-}
-
-.booking-form-container {
-}
-
-.bookings-container {
-	height: 100vh;
-}
-
-.container-info {
-  display:flex;
-  justify-content: space-around;
-  background-color: white;
-  margin-top: 80px;
-}
-
-.title-company-icon {
-  display:flex;
-  justify-content: left;
-  margin-top: 16px;
-  padding: 16px;
 }
 
 i.fas {
@@ -40,18 +18,6 @@ i.fas {
   color: #ED787A;
   margin-right: 16px;
 
-}
-
-.item {
-  background-color: white;
-  display: flex;
-  padding: 8px;
-}
-
-.item-2 {
-  background-color: white;
-  margin-top: 80px;
-  padding: 26px;
 }
 
 .text-margin {
@@ -63,16 +29,22 @@ i.fas {
  padding-top: 100px;
 }
 
-.bookings-header {
-  display:flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.bookings-header h1 {
-  align-content: center;
-}
-
 .positioning {
-  width: 30%;
+  padding: 50px;
+  width: 40%;
+  content-align: center;
 }
+
+
+.positioning h2 {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  height: 50px;
+}
+
+// .btn-login {
+//   height: 20px;
+//   width: 40px;
+// }

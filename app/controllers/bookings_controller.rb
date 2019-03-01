@@ -3,6 +3,7 @@ class BookingsController < ApplicationController
   def index
     @surf_companies = SurfCompany.all
     @bookings = Booking.all
+    @user = current_user
   end
   def show
     @booking = Booking.find(params[:id])
