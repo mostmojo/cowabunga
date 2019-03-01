@@ -5,7 +5,7 @@
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
-  margin: 15px;
+  margin-top: 15px;
 }
 
 .booking-product {
@@ -48,4 +48,22 @@
 .booking-attribute-links i {
   font-size: 20px;
   margin-right: 20px;
+
 }
+
+.booking-button-position-center {
+  text-align: center;
+}
+
+.booking-product-infos {
+  color: black;
+}
+
+.booking-product-infos:hover {
+  color: #ed787a;
+  }
+
+  .bookings-header {
+    text-align: center;
+    margin-bottom: 42px;
+  }

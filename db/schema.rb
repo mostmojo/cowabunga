@@ -33,12 +33,12 @@ ActiveRecord::Schema.define(version: 2019_03_01_115503) do
     t.datetime "updated_at", null: false
     t.float "latitude"
     t.float "longitude"
-    t.string "image"
-    t.string "price"
     t.text "description"
     t.text "facilities"
     t.string "number"
     t.string "email"
+    t.string "image"
+    t.string "price"
   end
 
   create_table "users", force: :cascade do |t|
