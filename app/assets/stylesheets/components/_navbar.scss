@@ -23,7 +23,7 @@
      }
      .navbar .nav-item:hover {
       border: 1px solid;
-      border-radius: 30px;
+      border-radius: 4px;
       opacity: 0.9;
       padding: 6px;
      }
@@ -51,9 +51,9 @@ min-height: 180px;
   -webkit-appearance: none;
     color: #FFF;
     background-color: #0292b6;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.10em;
@@ -103,13 +103,13 @@ min-height: 180px;
   padding: 10px 15px;
   margin: 10px;
   border: 1px solid white;
-  border-radius: 3px;
+  border-radius: 4px;
   -webkit-appearance: none;
     color: white;
     border: 1px solid white;
     // background-color: #0292b6;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
     text-decoration: none;
     font-weight: 700;
     line-height: 1em;
