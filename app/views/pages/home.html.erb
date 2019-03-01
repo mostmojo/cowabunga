@@ -1,10 +1,11 @@
 <div class="container-home">
 <section>
     <div class="video-wrap">
-        <video autoplay="autoplay" muted="muted" loop="loop" poster="media/img/vid-placeholder.jpg" class="bg-video">
+       <!--  <video autoplay="autoplay" muted="muted" loop="loop" poster="media/img/vid-placeholder.jpg" class="bg-video">
 
-        <source src="/assets/Surfer.mp4" type="video/mp4">
-        </video>
+          <source src="/assets/Surfer.mp4" type="video/mp4">
+        </video> -->
+        <%= video_tag("Surfer.mp4", autoplay: "autoplay", muted: "muted", loop: "loop", class: "bg-video") %>
     </div>
     <div class="container-text">
                 <div class="title" id="banner-typed">
