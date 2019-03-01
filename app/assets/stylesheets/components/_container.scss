@@ -1,16 +1,21 @@
+<<<<<<< HEAD
 .container-show {
   display: flex;
+=======
+.show-company-container {
+  display: flex;
+  margin: 60px;
+>>>>>>> 428cd0907f8fc1edc50d8a65815437106bead40c
   justify-content: space-between;
 }
 
-.details-container {
+.company-details-container {
   background-color: white;
-  padding: 15px;
   border-radius: 10px;
+
 }
 
-.show-container {
-	height: 60vh;
+.booking-form-container {
 }
 
 .bookings-container {
@@ -50,25 +55,6 @@ i.fas {
   padding: 26px;
 }
 
-.button-show {
-  -webkit-appearance: none;
-    color: #FFF;
-    padding: 15px 14px;
-    background-color: #ED787A;
-    display: inline-block;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 700;
-    line-height: 1em;
-    margin-left: 12px;
-    letter-spacing: 0.10em;
-    &:hover {
-    opacity: 0.8;
-  }
-}
-
 .text-margin {
   margin-top: 24px;
 }
@@ -78,13 +64,13 @@ i.fas {
  padding-top: 100px;
 }
 
-.header {
+.bookings-header {
   display:flex;
   justify-content: space-between;
   align-content: center;
 }
 
-.header h1 {
+.bookings-header h1 {
   align-content: center;
 }
 
