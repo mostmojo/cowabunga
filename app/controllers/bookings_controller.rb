@@ -32,7 +32,7 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
     @booking.destroy
     respond_to do |format|
-      format.html { redirect_to surf_companies_path, notice: 'Your booking was successfully deleted'}
+      format.html { redirect_to bookings_path, notice: 'Your booking was successfully deleted'}
     end
   end
 
