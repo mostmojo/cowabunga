@@ -3,9 +3,6 @@
   <div class="container">
     <div class="bookings-header">
       <h1>Manage my bookings</h1>
-      <%= link_to surf_companies_path do %>
-        <button class="btn text-white">Create new booking</button>
-      <% end %>
     </div>
     <div class="bookings-container">
       <% @user.bookings.each do |booking| %>
@@ -15,22 +12,27 @@
             <img style="background-image: url(booking.surf_company.image)">
             <div class="booking-attributes">
               <div class="booking-product-infos">
-                <h2>Booking Id: <%=booking.id %> </h2>
-                <p>Your booking is with: <%= booking.surf_company_id %></p>
+                <h2><%= booking.surf_company.name %></h2>
+                <p>Booking id: <%=booking.id %> </p>
                 <p>Lesson date: <%= booking.date %></p>
                 <p>Lesson time: <%= booking.time %></p>
               </div>
               <div class="booking-attribute-links">
-                <%= link_to booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } do %>
-                  <i class="fa fa-trash destroy_dose"></i>
-                <% end %>
                 <%= link_to edit_booking_path(booking), data: { confirm: "Are you sure?" } do %>
                   <i class="fas fa-pencil-alt"></i>
+                <% end %>
+                <%= link_to booking_path(booking), method: :delete, data: { confirm: "Are you sure?" } do %>
+                  <i class="fa fa-trash destroy_dose"></i>
                 <% end %>
               </div>
             </div>
           </div>
         <% end %>
+      <% end %>
+    </div>
+    <div class="booking-button-position-center">
+      <%= link_to surf_companies_path do %>
+        <button class="btn text-white" style="margin: 30px 0px;">Create new booking</button>
       <% end %>
     </div>
   </div>
