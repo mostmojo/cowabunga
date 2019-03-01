@@ -6,7 +6,7 @@
     display: inline-block;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
-    border-radius: 30px;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 700;
     line-height: 1em;
@@ -46,5 +46,5 @@
 .lead {
   font-size: 22px;
     line-height: 1.5em;
-    margin-bottom: 27px
+    margin: 12px;
 }
