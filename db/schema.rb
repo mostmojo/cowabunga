@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2019_03_01_115503) do
     t.string "image"
     t.string "price"
     t.text "description"
-    t.string "facilities"
+    t.text "facilities"
     t.string "number"
     t.string "email"
   end
