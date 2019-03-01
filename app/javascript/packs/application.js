@@ -6,3 +6,9 @@ initMapbox();
 import { loadDynamicBannerText } from '../components/banner';
 initMapbox();
 loadDynamicBannerText();
+
+function changemapstyle() {
+const format = document.getElementByClassName("mapboxgl-popup-content");
+
+format.classList.add("newformat");
+}
