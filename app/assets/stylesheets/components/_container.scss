@@ -1,5 +1,6 @@
-.container {
-  // display: flex;
+.container-show {
+  display: flex;
+  justify-content: space-between;
 }
 
 .details-container {
@@ -85,4 +86,8 @@ i.fas {
 
 .header h1 {
   align-content: center;
+}
+
+.positioning {
+  width: 30%;
 }
