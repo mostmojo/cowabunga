@@ -13,10 +13,10 @@
     <div class="company-details-container">
       <h2 class="company-title"><%= @surf_company.name %></h2>
       <p><i class="fas fa-map-marker-alt"></i><%= @surf_company.address %></p>
-      <p>The magic of Miami Beach is yours when you plan your BouYah Water Sports activities at the Miami Beach Marina. Located adjacent to Government Cut, with no fixed bridges and plenty of deep water your ocean adventure awaits!</p>
-      <p>Facilities</p>
-      <p>Available between 10:00-16:00</p>
-      <p><i class="fas fa-mobile-alt"></i>Contact us: +357 99543811</p>
+      <p><%= @surf_company.description %></p>
+      <p><%= @surf_company.price %></p>
+      <p><i class="fas fa-mobile-alt"></i><%= @surf_company.number %></p>
+      <p><i class="fas fa-envelope"></i><%= @surf_company.email %></p>
     </div>
 
     <div class="positioning">

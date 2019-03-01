@@ -16,17 +16,19 @@ surf_companies_attributes = [
     address:      ' 52 Bovard Ave # W, Ormond Beach, FL 32176, USA',
     image:        "https://bouyahwatersports.com/ocean-terrace-beach/wp-content/uploads/sites/3/2018/06/ot-700.jpg",
     price:        '20$ per hour',
+
     description:  "At Surfari Surf School we offer the best Surf Lessons in Ormond Beach, Florida.
                   Surfari surf lessons are for people of all ages. In a surf lesson, you will learn the proper techniques for paddling, positioning yourself on the board,
                   standing, and wave selection. After the lesson, you may use the board to practice the skills you learned.
                   We are confident that after the lesson you will be able to surf on your own!",
+    description:  "At Surfari Surf School we offer the best Surf Lessons in Ormond Beach, Florida. Surfari surf lessons are for people of all ages. In a surf lesson, you will learn the proper techniques for paddling, positioning yourself on the board, standing, and wave selection. After the lesson, you may use the board to practice the skills you learned. We are confident that after the lesson you will be able to surf on your own!",
     facilities:   '
                     Use of surfboard and leash
                     Use of wetsuit and/or rash-guard t-shirt
                     Complimentary bathrooms in the surf shopParking
                     Rental surf boards or stand up paddle boards',
     number:       '+1 386-299-3609',
-    email:        'admin@surfarisurfshop.',
+    email:        'admin@surfarisurfshop',
   },
   {
     name:         'EZride Surf School',
