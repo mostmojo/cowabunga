@@ -2,7 +2,7 @@
   "name": "cowabunga",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "5.4",
     "bootstrap": "^4.3.1",
     "flatpickr": "^4.5.4",
     "jquery": "^3.5.0",
